@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">app2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="setting_string">Setting</string>
+    <string name="my_profile_string">My Profile</string>
+    <string name="mental_health_string">Mental Health</string>
+    <string name="advice_string">Advice</string>
+    <string name="about_university_string">About University</string>
+</resources>

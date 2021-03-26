@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/button_day"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_setting"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/setting_string"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_my_profile"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_day"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_my_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/my_profile_string"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_setting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_mental_health"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/mental_health_string"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_advice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_day"
+        app:layout_constraintTop_toBottomOf="@+id/button_setting" />
+
+    <Button
+        android:id="@+id/button_advice"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/advice_string"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_mental_health"
+        app:layout_constraintTop_toBottomOf="@+id/button_my_profile" />
+
+    <Button
+        android:id="@+id/button_saved_post1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_saved_post2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_day" />
+
+    <Button
+        android:id="@+id/button_saved_post2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_about_university"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_saved_post1"
+        app:layout_constraintTop_toBottomOf="@+id/button_day" />
+
+    <Button
+        android:id="@+id/button_saved_post3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_saved_post4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_saved_post1" />
+
+    <Button
+        android:id="@+id/button_saved_post4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toStartOf="@+id/button_about_university"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_saved_post3"
+        app:layout_constraintTop_toBottomOf="@+id/button_saved_post2" />
+
+    <Button
+        android:id="@+id/button_about_university"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/about_university_string"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@color/Mizuiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_saved_post2"
+        app:layout_constraintTop_toBottomOf="@+id/button_advice" />
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
